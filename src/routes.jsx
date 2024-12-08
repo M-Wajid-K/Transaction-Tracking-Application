@@ -4,6 +4,7 @@ import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
 import DashboardPage from './pages/DashboardPage';
 import NotFoundPage from './pages/NotFoundPage';
+import TransactionsPage from './pages/TransactionsPage';
 
 function AppRoutes() {
   return (
@@ -12,6 +13,7 @@ function AppRoutes() {
       <Route path="/login" element={<LoginPage />} />
       <Route path="/signup" element={<SignupPage />} />
       <Route path="/dashboard" element={<DashboardPage />} />
+      <Route path="/dashboard/transactions" element={<TransactionsPage />} /> {/* Added transactions route */}
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
